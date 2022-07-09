@@ -1,0 +1,310 @@
+.CreateLocationPopup {
+  width: 550px;
+}
+
+.ant-modal {
+  &-content {
+    border-radius: 12px;
+
+    .ant-modal-close-icon {
+      svg {
+        margin-bottom: 2px;
+      }
+    }
+  }
+}
+
+.ant-modal-header {
+  background-color: #f6f7fb;
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+
+  .ant-modal-title {
+    font-family: "Poppins", sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 120%;
+  }
+}
+
+.ant-modal-body {
+  padding: 0;
+}
+
+.ant-modal-footer {
+  display: none;
+}
+
+.Form {
+  padding: 32px 40px 24px;
+
+  .Field_isRequired {
+    color: #f24445;
+  }
+
+  .ant-row {
+    width: 100%;
+  }
+
+  .ant-checkbox {
+    &-inner {
+      border-radius: 3px;
+    }
+
+    &-checked {
+      .ant-checkbox-inner {
+        background-color: var(--menu-item-selected-background);
+
+        &::after {
+          border-color: var(--active-blue);
+        }
+      }
+    }
+  }
+
+  .ant-form-item-control-input-content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    .InfoIcon-Wrapper {
+      margin-left: 16px;
+    }
+  }
+
+  &-LocationInput {
+    height: 40px;
+    font-family: "Poppins", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 20px;
+    border-radius: 4px;
+  }
+
+  &-Workweek {
+    display: flex;
+    flex-direction: row;
+
+    &Label {
+      width: 125px;
+      font-family: "Poppins", sans-serif;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 13px;
+      line-height: 16px;
+      color: var(--text-black);
+      margin-right: 16px;
+    }
+
+    &Checkboxes {
+      display: grid;
+      width: 100%;
+      grid-template-rows: 16px 16px 16px;
+      row-gap: 12px;
+      column-gap: 30px;
+      grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    &Checkbox {
+      margin-right: 8px;
+
+      &-Wrapper {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+      }
+
+      &Label {
+        font-family: "Poppins", sans-serif;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 13px;
+        line-height: 16px;
+        color: var(--text-black);
+      }
+    }
+  }
+
+  .ant-select-single:not(.ant-select-customize-input) {
+    .ant-select-selector {
+      height: 40px;
+      border-radius: 4px;
+    }
+  }
+
+  .Select-Label {
+    z-index: 100;
+    top: -6px;
+    left: 6px;
+    padding: 0 6px;
+    position: absolute;
+    font-family: "Poppins", sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 11px;
+    line-height: 15px;
+    background-color: #ffffff;
+    color: var(--text-black);
+  }
+
+  &-Select {
+    height: 40px;
+
+    .ant-select-selection-item {
+      height: 40px;
+      font-family: "Poppins", sans-serif;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 13px;
+      line-height: 40px !important;
+      color: var(--text-black);
+    }
+
+    .ant-select-selector {
+      height: 40px;
+      border-radius: 4px;
+    }
+  }
+
+  &-YearStartInput {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    .Form-MonthSelect {
+      width: 125px;
+      margin-right: 15px;
+      line-height: 40px;
+    }
+
+    .Form-DaySelect {
+      width: 80px;
+      line-height: 40px;
+    }
+  }
+
+  &-Checkbox {
+    margin-right: 16px;
+
+    &Label {
+      font-family: "Poppins", sans-serif;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 13px;
+      line-height: 16px;
+      color: var(--text-black);
+    }
+  }
+
+  .ant-select.Form-StartDaySelect {
+    width: 145px;
+  }
+
+  &-UsersSelect {
+    .ant-select-selection-item {
+      height: 24px;
+      background-color: var(--menu-item-selected-background);
+      border-radius: 4px;
+
+      &-content {
+        line-height: 24px;
+        color: var(--active-blue);
+        font-family: "Poppins", sans-serif;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 13px;
+        line-height: 24px;
+        margin-right: 6px;
+      }
+
+      &-remove {
+        height: 24px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 1px;
+
+        svg {
+          fill: var(--active-blue);
+        }
+      }
+    }
+  }
+
+  &-Info {
+    padding: 8px 12px;
+    border: 1px solid var(--active-blue);
+    background-color: var(--menu-item-selected-background);
+    border-radius: 6px;
+    font-family: "Poppins", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 140%;
+  }
+
+  .Form-Controls {
+    margin-top: 24px;
+
+    .ant-form-item-control-input-content {
+      display: flex;
+      justify-content: flex-end;
+
+      button {
+        height: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 12px 24px;
+        border-radius: 6px;
+      }
+
+      .Form-CancelButton {
+        margin-right: 8px;
+        background-color: #afb6c6;
+        border: none;
+      }
+    }
+  }
+
+  .Users-Select {
+    .ant-form-item-control-input-content {
+      flex-direction: column;
+    }
+
+    .Warning {
+      display: flex;
+      flex-direction: row;
+      align-items: flex-start;
+      margin-top: 4px;
+
+      &-Icon {
+        margin-right: 8px;
+        margin-top: 4px;
+
+        path {
+          fill: #f24445;
+        }
+      }
+
+      &-Info {
+        font-family: "Poppins", sans-serif;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 16px;
+        color: #868c98;
+      }
+    }
+  }
+}
+
+.ant-tooltip-inner {
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 11px;
+  line-height: 18px;
+}

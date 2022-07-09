@@ -1,0 +1,170 @@
+.CountryCard {
+  display: flex;
+  flex-direction: column;
+  width: 304px;
+  height: 173px;
+  box-sizing: border-box;
+  padding: 20px;
+  background: #ffffff;
+  box-shadow: 2px 2px 15px rgba(0, 44, 175, 0.05);
+  border-radius: 6px;
+
+  .ant-card-body {
+    padding: 0;
+  }
+
+  .Card {
+    &-Header {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      margin-bottom: 24px;
+    }
+
+    &-Title {
+      font-family: "Poppins", sans-serif;
+      font-style: normal;
+      font-weight: 600;
+      font-size: 15px;
+      line-height: 140%;
+      margin-right: 8px;
+      margin-bottom: 0;
+    }
+
+    &-DefaultBadge {
+      width: 72px;
+      height: 20px;
+      background: #00a0ec;
+      border-radius: 1000px;
+      font-family: "Poppins", sans-serif;
+      font-style: normal;
+      font-weight: 600;
+      font-size: 12px;
+      line-height: 20px;
+      color: #ffffff;
+      text-align: center;
+      margin-right: 85px;
+    }
+
+    &-MoreButton {
+      border: none;
+      outline: none;
+      background: none;
+      align-self: flex-end;
+      border-radius: 4px;
+      transition: all 0.3s;
+      cursor: pointer;
+
+      svg {
+        transform: scale(1.4);
+      }
+
+      &:hover {
+        background-color: var(--menu-item-selected-background);
+
+        svg {
+          fill: var(--active-blue);
+        }
+      }
+    }
+
+    &-CountryWorkers {
+      display: flex;
+    }
+
+    &-CountryInformation {
+      display: grid;
+      grid-template-columns: 91px 124px;
+      grid-template-rows: 16px;
+      row-gap: 10px;
+      column-gap: 16px;
+      margin-bottom: 16px;
+
+      .Information {
+        &-Title {
+          text-align: left;
+          font-family: "Poppins";
+          font-style: normal;
+          font-weight: 500;
+          font-size: 13px;
+          line-height: 16px;
+          color: var(--text-black);
+        }
+
+        &-Button {
+          display: block;
+          border: none;
+          outline: none;
+          background: transparent;
+          text-align: left;
+          width: fit-content;
+          padding: 0;
+          font-family: "Poppins";
+          font-style: normal;
+          font-weight: 400;
+          font-size: 13px;
+          line-height: 16px;
+          color: var(--active-blue);
+        }
+      }
+    }
+  }
+
+  .UserAvatar {
+    width: 30px;
+    height: 30px;
+    margin-right: 12px;
+
+    .ant-avatar-string {
+      line-height: 30px;
+    }
+  }
+
+  .ant-avatar:not(.UserAvatar) {
+    margin-left: -12px;
+    font-family: "Poppins";
+    font-style: normal;
+    line-height: 30px;
+    font-weight: 600;
+    font-size: 14px;
+    color: var(--active-blue);
+  }
+}
+
+.ant-popover-arrow {
+  display: none;
+}
+
+.ant-popover-inner {
+  border-radius: 6px;
+}
+
+.Card-Popover {
+  display: flex;
+  flex-direction: column;
+
+  button {
+    background-color: #ffffff;
+    border: none;
+    outline: none;
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 16px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+
+    .anticon {
+      margin-right: 8px;
+    }
+
+    span {
+      font-family: "Poppins", sans-serif;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 13px;
+      line-height: 16px;
+    }
+  }
+}

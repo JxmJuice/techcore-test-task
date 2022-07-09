@@ -1,0 +1,16 @@
+:root {
+  --background-blue: #f5f9fe;
+  --active-blue: #00a0ec;
+  --text-grey: #afb6c6;
+  --text-black: #1e212a;
+  --menu-item-selected-background: #eef7fc;
+}
+
+a {
+  color: var(--active-blue);
+
+  &:hover {
+    color: var(--active-blue);
+    text-decoration: underline;
+  }
+}

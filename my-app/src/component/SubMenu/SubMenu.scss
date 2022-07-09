@@ -1,0 +1,108 @@
+.ant-layout-sider-children {
+  display: flex;
+  flex-direction: row;
+
+  .ant-menu-sub {
+    background-color: transparent;
+
+    &menu {
+      //height: 20px;
+      margin-bottom: 20px;
+
+      span {
+        font-family: "Poppins", sans-serif;
+        font-size: 14px;
+        font-weight: 500;
+        color: var(--text-black);
+        line-height: 20px;
+      }
+
+      svg {
+        margin-right: 12px;
+      }
+
+      &-open {
+        svg {
+          path {
+            fill: var(--active-blue);
+          }
+        }
+
+        span {
+          color: var(--active-blue);
+        }
+      }
+
+      .ant-menu-submenu-title {
+        height: fit-content;
+        margin-top: 0;
+      }
+
+      &-arrow {
+        display: none;
+      }
+    }
+  }
+}
+
+.SubMenu {
+  background-color: var(--background-blue);
+  border-right: 1px solid #2e5bff1a;
+  max-width: 240px;
+
+  &-Title {
+    display: flex;
+    padding-left: 24px;
+    margin: 24px 0 16px;
+    width: 100%;
+    font-size: 16px;
+    line-height: 20px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    color: var(--text-grey);
+  }
+
+  &_isLastLevel {
+    ul {
+      margin-top: 10px;
+    }
+  }
+
+  .ant-menu-inline {
+    & > .ant-menu-item-selected.SubMenu-Item_isLastLevel {
+      background-color: var(--menu-item-selected-background);
+
+      a {
+        color: var(--active-blue);
+      }
+    }
+
+    & > .ant-menu-item.SubMenu-Item_isLastLevel {
+      display: flex;
+      margin-top: 0;
+      height: 32px;
+      margin-bottom: 3px;
+      width: 100%;
+
+      a {
+        font-family: "Poppins", sans-serif;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 13px;
+        line-height: 16px;
+        margin-left: 7px;
+      }
+
+      &::after {
+        display: none;
+      }
+    }
+  }
+
+  .HideButton {
+    position: absolute;
+    right: -12px;
+    top: 78px;
+    z-index: 100;
+  }
+}

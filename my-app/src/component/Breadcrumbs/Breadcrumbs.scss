@@ -1,0 +1,41 @@
+.Breadcrumbs {
+  margin-bottom: 8px;
+
+  li {
+    height: 16px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    &:not(:last-child) .ant-breadcrumb-separator {
+      display: flex;
+      align-items: center;
+      margin: 0 6px;
+    }
+  }
+
+  .Breadcrumb {
+    display: flex;
+    align-items: center;
+
+    svg {
+      width: 14px;
+      height: 14px;
+      margin-right: 4px;
+
+      path {
+        fill: var(--active-blue);
+      }
+    }
+
+    &-Title {
+      font-family: "Poppins";
+      font-style: normal;
+      font-weight: 600;
+      font-size: 13px;
+      line-height: 16px;
+      color: var(--active-blue);
+      text-align: center;
+    }
+  }
+}
