@@ -9,7 +9,7 @@ import CreateLocationPopup from "./component/CreateLocationPopup/CreateLocationP
 
 function App() {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename="/">
       <div className="App">
         <Layout className="Wrapper" style={{ minHeight: "100vh" }}>
           <SideMenu />
